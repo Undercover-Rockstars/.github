@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Undercover Rockstars">
+  <title>Undercover Rockstars</title>
+  <desc>A five-pointed star, half in shadow: one pattern cut twice, once for the day and once for the night.</desc>
+  <defs>
+    <clipPath id="left"><rect x="0" y="0" width="256" height="512"/></clipPath>
+    <clipPath id="right"><rect x="256" y="0" width="256" height="512"/></clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="#0a0a0b"/>
+
+  <!-- The star is drawn twice through complementary clips: the night half in
+       the accent, the day half in paper. Same shape, two lives. -->
+  <g transform="translate(256 256) scale(1.15) translate(-256 -278)">
+    <path id="star" d="M256 132 302 224 404 238 330 316 353 424 256 366 159 424 182 316 108 238 210 224Z"
+          fill="oklch(62% 0.24 27)" clip-path="url(#left)"/>
+    <path d="M256 132 302 224 404 238 330 316 353 424 256 366 159 424 182 316 108 238 210 224Z"
+          fill="#ECEBE6" clip-path="url(#right)"/>
+  </g>
+</svg>

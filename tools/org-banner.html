@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Undercover Rockstars org banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  html, body { margin: 0; padding: 0; width: 1280px; height: 440px; overflow: hidden; }
+  body {
+    background: #0a0a0b; color: #ecebe6; font-family: Archivo, Helvetica, Arial, sans-serif;
+    position: relative; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    box-sizing: border-box; padding: 0 70px;
+  }
+  /* Day on one side, night on the other — the whole idea of the house. */
+  .split { position: absolute; inset: 0; background: linear-gradient(102deg, #08080a 38%, #17171a 64%, #232326 88%, #2b2b2e 100%); }
+  .glow {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(32% 58% at 50% 116%, oklch(62% 0.24 27 / .18), transparent 68%),
+      radial-gradient(28% 44% at 88% 8%, rgba(236,235,230,.06), transparent 70%);
+  }
+  .mark { position: relative; width: 88px; height: 87px; margin-bottom: 26px; }
+  .word {
+    position: relative; font-size: 54px; font-weight: 500; letter-spacing: .22em;
+    line-height: 1; margin: 0; text-transform: uppercase; text-indent: .22em; white-space: nowrap;
+  }
+  .tag { position: relative; font-size: 23px; font-weight: 300; color: #7e7d78; margin: 24px 0 0; }
+  .meta {
+    position: relative; font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    letter-spacing: .2em; text-transform: uppercase; color: #575652; margin: 30px 0 0;
+  }
+  .meta b { color: oklch(62% 0.24 27); font-weight: 400; }
+  .rule {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 4px;
+    background: linear-gradient(90deg, #0f0f10, oklch(62% 0.24 27) 50%, #e9e7e1);
+  }
+</style>
+</head>
+<body>
+  <div class="split"></div>
+  <div class="glow"></div>
+  <img class="mark" src="../assets/mark.svg" alt="">
+  <p class="word">Undercover Rockstars</p>
+  <p class="tag">Everyone has a rockstar undercover.</p>
+  <p class="meta">undercoverrockstars.com &nbsp;&middot;&nbsp; <b>FZ-002</b> &nbsp;&middot;&nbsp; a Factory Zero venture</p>
+  <div class="rule"></div>
+</body>
+</html>
